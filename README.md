@@ -15,4 +15,6 @@ npm run styleguide
 npm run styleguide:build
 ```
 
-[How to document](https://github.com/vue-styleguidist/vue-styleguidist/blob/master/docs/Documenting.md)
+[styleguidist docu](https://github.com/vue-styleguidist/vue-styleguidist/blob/master/docs/Documenting.md)
+
+[usejsdoc](http://usejsdoc.org/)

@@ -1,11 +1,7 @@
-<docs>
-  Joho
-</docs>
-
 <template>
   <div>
     <label>{{ value ? 'Jeah' : 'noo...' }}</label>
-    <input type="checkbox" ref="checkbox" :checked="value ? 'checked' : ''" @input="update()">
+    <input type="checkbox" ref="checkbox1" :checked="value ? 'checked' : ''" @input="update()">
   </div>
 </template>
 
@@ -18,7 +14,7 @@
        * The Value of the checkbox
        */
       value: {
-        type: String
+        type: Boolean
       },
       /**
        * the label
@@ -30,8 +26,8 @@
 
     methods: {
       update () {
-        console.log(this.$refs.checkbox.checked)
-        this.$emit('input', this.$refs.checkbox.checked)
+        console.log(this.$refs.checkbox1.checked)
+        this.$emit('input', this.$refs.checkbox1.checked)
       }
     }
   }
@@ -39,4 +35,17 @@
 
 <docs>
   Mal sehen ob das klappt
+  ```js
+  new Vue({
+    data(){
+      return {
+        selected: true
+      }
+    },
+    template: `
+      <div>
+        <checkbox v-model="selected" />
+      </div>`
+  })
+  ```
 </docs>
