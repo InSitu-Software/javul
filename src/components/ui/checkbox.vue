@@ -1,7 +1,7 @@
 <template>
   <div>
     <label>{{ value ? 'Jeah' : 'noo...' }}</label>
-    <input type="checkbox" ref="checkbox1" :checked="value ? 'checked' : ''" @input="update()">
+    <input type="checkbox" ref="checkbox1" :checked="value ? 'checked' : ''" @change="update()">
   </div>
 </template>
 
