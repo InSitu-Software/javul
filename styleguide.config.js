@@ -1,6 +1,6 @@
 module.exports = {
   components: 'src/components/**/*.vue',
-  defaultExample: true,
+  defaultExample: false,
   webpackConfig: require('./build/webpack.base.conf'),
   showUsage: true,
   sections: [

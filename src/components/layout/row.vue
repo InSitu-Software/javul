@@ -16,3 +16,9 @@
     width: 100%;
   }
 </style>
+
+
+<docs>
+  A row is a fullwidth flex element.
+  It helps to position ui elements within it
+</docs>
