@@ -1,15 +1,15 @@
 import { mount } from 'vue-test-utils'
-import Checkbox from './checkbox'
+import Textfield from './textfield'
 
-describe('Checkbox', () => {
+describe('Textfield', () => {
 
   test('is a Vue instance', () => {
-    const wrapper = mount(Checkbox)
+    const wrapper = mount(Textfield)
     expect(wrapper.isVueInstance()).toBeTruthy()
   })
 
-  test('renders a input type checkbox', () => {
-    const wrapper = mount(Checkbox)
+  test('renders a input', () => {
+    const wrapper = mount(Textfield)
     expect(wrapper.contains('input')).toBe(true)
   })
 })
