@@ -16,4 +16,13 @@ describe('Checkbox', () => {
     const wrapper = mount(Checkbox)
     expect(wrapper.element).toMatchSnapshot()
   })
+
+  test('should have prop "label"', () => {
+    const wrapper = mount(Checkbox, {
+      propsData: {
+        label: 'test'
+      }
+    })
+    expect(wrapper.props().label).toBe('test')
+  })
 })

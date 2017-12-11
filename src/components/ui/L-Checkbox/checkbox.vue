@@ -33,6 +33,8 @@
   }
 </script>
 
+<style></style>
+
 <docs>
   Mal sehen ob das klappt
   ```js
