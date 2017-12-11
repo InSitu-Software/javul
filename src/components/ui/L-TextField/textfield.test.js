@@ -12,4 +12,9 @@ describe('Textfield', () => {
     const wrapper = mount(Textfield)
     expect(wrapper.contains('input')).toBe(true)
   })
+
+  test('should match the snapshot', () => {
+    const wrapper = mount(Textfield)
+    expect(wrapper.element).toMatchSnapshot()
+  })
 })
